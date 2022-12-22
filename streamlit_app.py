@@ -120,9 +120,9 @@ def update_query_params():
 
 
 with row1_1:
-    st.title("ニューヨーク Uber データ")
+    st.title("NYC Uber Ridesharing Data")
     hour_selected = st.slider(
-        "時刻の変更", 0, 23, key="pickup_hour", on_change=update_query_params
+        "Select hour of pickup", 0, 23, key="pickup_hour", on_change=update_query_params
     )
 
 
@@ -130,8 +130,8 @@ with row1_2:
     st.write(
         """
     ##
-   ニューヨーク市内と主要地方空港におけるUberピックアップの量を表す。
-   スライダーにより異なる時間軸を表示できる。
+    Examining how Uber pickups vary over time in New York City's and at its major regional airports.
+    By sliding the slider on the left you can view different slices of time and explore different transportation trends.
     """
     )
 
