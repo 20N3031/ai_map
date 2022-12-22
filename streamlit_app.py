@@ -120,20 +120,13 @@ def update_query_params():
 
 
 with row1_1:
-    st.title("NYC Uber Ridesharing Data")
+    st.title("NYC Uber Sharing Data")
     hour_selected = st.slider(
         "Select hour of pickup", 0, 23, key="pickup_hour", on_change=update_query_params
     )
 
 
-with row1_2:
-    st.write(
-        """
-    ##
-    Examining how Uber pickups vary over time in New York City's and at its major regional airports.
-    By sliding the slider on the left you can view different slices of time and explore different transportation trends.
-    """
-    )
+
 
 # LAYING OUT THE MIDDLE SECTION OF THE APP WITH THE MAPS
 row2_1, row2_2, row2_3, row2_4 = st.columns((2, 1, 1, 1))
